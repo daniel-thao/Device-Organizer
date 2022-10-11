@@ -50,4 +50,4 @@ async function deviceListIntoSummary(url) {
   return { count, min, max, average, stdDev };
 }
 
-deviceListIntoSummary("https://main.g2planet.com/frontend_codetest/weights.json").then((res) => console.log(res));
+deviceListIntoSummary(process.env.FILE).then((res) => console.log(res));
